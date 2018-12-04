@@ -1,11 +1,6 @@
 import numpy as np
 import re
-
-
-def read_file(filename):
-    with open(filename) as f:
-        lines = f.read().splitlines()
-    return lines
+from utils import read_file
 
 
 def parse_line(line):

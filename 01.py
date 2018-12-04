@@ -1,7 +1,4 @@
-def read_file(filename):
-    with open(filename) as f:
-        lines = f.read().splitlines()
-    return lines
+from utils import read_file
 
 print("#--- part1 ---#")
 print(sum(map(int, read_file('01.txt'))))
